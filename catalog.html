@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
-    <title>Интернет-магазин гаджетов Девайс</title>
+    <title>Каталог интернет-магазина Девайс</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
@@ -22,8 +22,11 @@
           <button class="searching-button" type="submit">Найти</button>
         </form>
         <ul class="navigation-personal general-list">
-          <li class="navigation-personal-item login">
-            <a class="navigation-personal-link general-hover general-focus" href="#">Войти</a>
+          <li class="navigation-personal-item profile">
+            <a class="navigation-personal-link general-hover general-focus" href="#">Коля Петухов</a>
+          </li>
+          <li class="navigation-personal-item logout">
+            <button class="navigation-personal-link" type="button">Выйти</button>
           </li>
           <li class="navigation-personal-item compare">
             <a class="navigation-personal-link general-hover general-focus" href="#">Сравнить</a>
@@ -80,7 +83,7 @@
               <a class="subcatalog-link general-hover" href="#">Квадрокоптеры</a>
             </li>
             <li class="subcatalog-item">
-              <a class="subcatalog-link general-hover" href="catalog.html">Моноподы для cелфи</a>
+              <a class="subcatalog-link general-hover active-link" href="catalog.html">Моноподы для cелфи</a>
             </li>
             <li class="subcatalog-item">
               <a class="subcatalog-link general-hover" href="#">Умные часы</a>
@@ -104,201 +107,188 @@
         </ul>
       </nav>
     </header>
-    <main class="main-index">
-      <h1 class="visually-hidden">Интернет-магазин Device</h1>
-      <section class="product-slider container">
-        <h2 class="visually-hidden">Галерея товаров</h2>
-        <div class="product-slider-control">
-          <button class="product-slider-button slider-prev general-hover general-focus" type="button">
-            <span class="visually-hidden">Предыдущий товар</span>
-          </button>
-          <button class="product-slider-button slider-next general-focus" type="button">
-            <span class="visually-hidden">Следующий товар</span>
-          </button>
-        </div>
-        <ul class="product-slider-list general-list">
-          <!-- У всех li, кроме соответствующего текущему товару, должен стоят для скрытия класс hidden-item -->
-          <li class="product-slider-item">
-            <img class="product-slider-image" src="images/product-slider/drone.png" alt="Квадрокоптер." width="560" height="560">
-            <div class="product-description-section">
-              <h3 class="product-title">Порхает как бабочка, жалит как пчела!</h3>
-              <p class="product-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-              <a class="product-details button link-spacing-font" href="#">Подробнее</a>
-              <dl class="product-description-list">
-                <div class="product-description-category">
-                  <dt class="product-description">Дальность полета</dt>
-                  <dd class="product-description-detals">800 м</dd>
-                </div>
-                <div class="product-description-category">
-                  <dt class="product-description">Радиус поражения</dt>
-                  <dd class="product-description-detals">50 м</dd>
-                </div>
-              </dl>
-            </div>
+    <main class="main-inner">
+      <header class="inner-header container">
+        <h1 class="inner-header-title">Моноподы для селфи</h1>
+        <ul class="breadcrumbs general-list">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link general-hover general-focus" href="index.html">Главная</a>
           </li>
-          <li class="product-slider-item hidden-item">
-            <img class="product-slider-image" src="images/product-slider/wristband.png" alt="Фитнес-браслет." width="560" height="560">
-            <div class="product-description-section">
-              <h3 class="product-title">Худеем правильно!</h3>
-              <p class="product-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-              <a class="product-details" href="#">Подробнее</a>
-              <dl class="product-description-list">
-                <div class="product-description-category">
-                  <dt class="product-description">Без подзарядки</dt>
-                  <dd class="product-description-detals">48 часов</dd>
-                </div>
-              </dl>
-            </div>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link general-hover general-focus" href="#">Каталог товаров</a>
           </li>
-          <li class="product-slider-item hidden-item">
-            <img class="product-slider-image" src="images/product-slider/selfie-stick.png" alt="Палка для селфи." width="560" height="560">
-            <div class="product-description-section">
-              <h3 class="product-title">Делай селфи, как Бен Стиллер! </h3>
-              <p class="product-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
-              <a class="product-details" href="#">Подробнее</a>
-              <dl class="product-description-list">
-                <div class="product-description-category">
-                  <dt class="product-description">Длина палки</dt>
-                  <dd class="product-description-detals">8,5 м</dd>
-                </div>
-                <div class="product-description-category">
-                  <dt class="product-description">Вес палки</dt>
-                  <dd class="product-description-detals">5 кг</dd>
-                </div>
-                <div class="product-description-category">
-                  <dt class="product-description">Материал</dt>
-                  <dd class="product-description-detals">Карбон</dd>
-                </div>
-              </dl>
-            </div>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link general-hover general-focus" href="catalog.html">Моноподы для селфи</a>
           </li>
         </ul>
-        <ul class="slider-pagination general-list">
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button slider-pagination-button-current" type="button">
-              <span class="visually-hidden">Первый товар</span>
-            </button>
-          </li>
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button general-hover" type="button">
-              <span class="visually-hidden">Второй товар</span>
-            </button>
-          </li>
-          <li class="slider-pagination-item">
-            <button class="slider-pagination-button general-hover" type="button">
-              <span class="visually-hidden">Третий товар</span>
-            </button>
-          </li>
-        </ul>
-      </section>
-      <section class="subsection container">
-        <h2 class="visually-hidden">Категории товаров</h2>
-        <ul class="subsection-list general-list">
-          <li class="subsection-item">
-            <a class="subsection-link sub-virtuality general-focus" href="#">Виртуальная реальность</a>
-          </li>
-          <li class="subsection-item">
-            <a class="subsection-link sub-selfie general-focus" href="catalog.html">Моноподы для&nbsp;селфи</a>
-          </li>
-          <li class="subsection-item">
-            <a class="subsection-link sub-actioncam general-focus" href="#">Экшн-камеры</a>
-          </li>
-          <li class="subsection-item">
-            <a class="subsection-link sub-wristband general-focus" href="#">Фитнес-браслеты</a>
-          </li>
-          <li class="subsection-item">
-            <a class="subsection-link sub-smartwatch general-focus" href="#">Умные часы</a>
-          </li>
-          <li class="subsection-item">
-            <a class="subsection-link sub-drone general-focus" href="#">Квадрокоптеры</a>
-          </li>
-        </ul>
-      </section>
-      <section class="tab-service">
+      </header>
+      <section class="catalog-products">
         <div class="container">
-          <h2 class="visually-hidden">Наш сервис</h2>
-          <ul class="tab-service-navigation general-list">
-            <li class="tab-service-item">
-              <button class="button link-spacing-font tab-service-button tab-service-button-current" type="button">Доставка</button>
-            </li>
-            <li class="tab-service-item">
-              <button class="button link-spacing-font tab-service-button" type="button">Гарантия</button>
-            </li>
-            <li class="tab-service-item">
-              <button class="button link-spacing-font tab-service-button" type="button">Кредит</button>
-            </li>
-          </ul>
-          <ul class="tab-description general-list">
-            <!-- Для всех блоков кроме текущего ставим класс hidden-item для скрытия -->
-            <li class="tab-description-item delivery">
-              <h3 class="tab-description-title">Доставка</h3>
-              <p class="tab-description-text">Мы с удовольствием доставим ваш товар прямо к&nbsp;вашему подъезду совершенно бесплатно! Ведь мы&nbsp;неплохо заработаем, поднимая его на ваш этаж.</p>
-            </li>
-            <li class="tab-description-item warranty hidden-item">
-              <h3 class="tab-description-title">Гарантия</h3>
-              <p class="tab-description-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-            </li>
-            <li class="tab-description-item credit hidden-item">
-              <h3 class="tab-description-title">Кредит</h3>
-              <p class="tab-description-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <div class="container">
-        <a class="rare-product-delivery link-spacing-font general-focus" href="#">
-          Доставим редкий товар под заказ
-          <span class="rare-product-delivery-circle"></span>
-        </a>
-      </div>
-      <div class="container about-contact">
-        <section class="about-us">
-          <h2 class="about-us-title">О нас</h2>
-          <p class="about-us-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-          <p class="about-us-text">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
-          <ul class="transport-company-list general-list">
-            <li class="transport-company-item">Меловые линии</li>
-            <li class="transport-company-item">СДИК</li>
-            <li class="transport-company-item">ТоксБерри</li>
-          </ul>
-          <a class="about-us-link button link-spacing-font" href="#">Подробнее о нас</a>
-        </section>
-        <section class="main-contact">
-          <h2 class="main-contact-title">Контакты</h2>
-          <p class="main-contact-text">Вы можете забрать товар сами, заехав в наш офис. Заодно&nbsp;сможете проверить работоспособность покупки.</p>
-          <div>
-            <h3 class="main-contact-subtitle">Интернет-магазин «Девайс»</h3>
-            <address class="main-contact-adress">
-              <p class="main-contact-adress-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-              <a class="main-contacts-phone general-hover general-focus" href="tel:+78128121212">+7 (812) 812-12-12</a>
-            </address>
-          </div>
-          <div>
-            <h3 class="main-contact-subtitle">Время работы</h3>
-            <ul class="main-contacts-schedule general-list">
-              <li class="main-contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
-              <li class="main-contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
-            </ul>
-          </div>
-          <a class="contact-link button link-spacing-font" href="#">Напишите нам</a>
-        </section>
-      </div>
-      <section class="subscribe">
-        <div class="container">
-          <div class="subscribe-description">
-            <h2 class="subscribe-title">Подпишитесь на&nbsp;рассылку</h2>
-            <p class="subscribe-text">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
-          </div>
-          <div class="subscribe-introduce">
-            <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label class="subscribe-label">
-                <span class="visually-hidden">Ваш e-mail</span>
-                <!-- В случае некорректного адреса email для input добавляется класс subscribe-field-error -->
-                <input class="subscribe-field" type="email" id="subscribe-email" placeholder="Ваш e-mail" name="subscribe-email" required>
-              </label>
-              <button class="subscribe-button link-spacing-font general-focus" type="submit">Подписаться</button>
-            </form>
-            <span class="subscribe-text-free">Это бесплатно</span>
+          <h2 class="visually-hidden">Список товаров с фильтрами</h2>
+          <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+            <h3 class="catalog-filter-text link-spacing-font">Фильтр:</h3>
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Стоимость</legend>
+              <div class="range">
+                <div class="range-scale">
+                  <div class="range-bar">
+                    <button class="range-toggle toggle-min">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                    <button class="range-toggle toggle-max">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="range-wrapper-inputs">
+                  <label class="catalog-filter-label">
+                    от&nbsp;<input class="range-input" type="number" value="0" name="min-price">
+                  </label>
+                  <label class="catalog-filter-label">
+                    до&nbsp;<input class="range-input" type="number" value="5000" name="max-price">
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Цвет</legend>
+              <ul class="filter-color general-list">
+                <li class="filter-color-item">
+                  <label class="control general-hover">
+                    <input class="visually-hidden control-input" type="checkbox" name="color" value="black" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Черный</span>
+                  </label>
+                </li>
+                <li class="filter-color-item">
+                  <label class="control general-hover">
+                    <input class="visually-hidden control-input" type="checkbox" name="color" value="white" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Белый</span>
+                  </label>
+                </li>
+                <li class="filter-color-item">
+                  <label class="control general-hover">
+                    <input class="visually-hidden control-input" type="checkbox" name="color" value="blue">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Синий</span>
+                  </label>
+                </li>
+                <li class="filter-color-item">
+                  <label class="control general-hover">
+                    <input class="visually-hidden control-input" type="checkbox" name="color" value="red">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Красный</span>
+                  </label>
+                </li>
+                <li class="filter-color-item">
+                  <label class="control general-hover">
+                    <input class="visually-hidden control-input" type="checkbox" name="color" value="pink">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Розовый</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Bluetooth</legend>
+              <ul class="filter-bluetooth general-list">
+                <li class="filter-bluetooth-item">
+                  <label class="control general-hover">
+                    <input class="visually-hidden control-input" type="radio" name="bluetooth" checked value="on">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Есть</span>
+                  </label>
+                </li>
+                <li class="filter-bluetooth-item">
+                  <label class="control general-hover">
+                    <input class="visually-hidden control-input" type="radio" name="bluetooth" value="off">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Нет</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="button link-spacing-font button-show" type="submit">Показать</button>
+          </form>
+          <div class="catalog-right-side">
+            <div class="sorting-mode">
+              <h3 class="catalog-sorting-text link-spacing-font">Сортировка:</h3>
+              <select class="select-control general-hover general-focus">
+                <option value="popular">Популярные</option>
+                <option value="cheap">Дешёвые</option>
+                <option value="expensive">Дорогие</option>
+              </select>
+              <div class="arrow-up-down">
+                <a class="arrow-up general-focus" href="#">
+                  <span class="visually-hidden">Показать список по возрастанию.</span>
+                </a>
+                <a class="arrow-down general-focus" href="#">
+                  <span class="visually-hidden">Показать список по убыванию.</span>
+                </a>
+              </div>
+            </div>
+            <div class="white-background">
+              <ul class="product-list general-list">
+                <!-- Для отображения отображения метки NEW добавляется класс new-label к ссылке-->
+                <li class="product-card">
+                  <a class="product-card-link general-focus" href="#">
+                    <img class="product-card-image" src="images/product-catalog/simple-selfie-stick.png" alt="Любительская селфи-палка." width="360" height="380">
+                    <span class="product-card-details link-spacing-font">Подробнее</span>
+                    <h3 class="product-card-title">Любительская<br>селфи-палка</h3>
+                    <span class="product-card-price">500 ₽</span>
+                  </a>
+                </li>
+                <li class="product-card">
+                  <a class="product-card-link general-focus" href="#">
+                    <img class="product-card-image" src="images/product-catalog/profi-selfie-stick.png" alt="Профессиональная селфи-палка." width="360" height="380">
+                    <span class="product-card-details link-spacing-font">Подробнее</span>
+                    <h3 class="product-card-title">Профессиональная селфи-палка</h3>
+                    <span class="product-card-price">1 500 ₽</span>
+                  </a>
+                </li>
+                <li class="product-card">
+                  <a class="product-card-link general-focus" href="#">
+                    <img class="product-card-image" src="images/product-catalog/underwater-selfie-stick.png" alt="Непотопляемая селфи-палка." width="360" height="380">
+                    <span class="product-card-details link-spacing-font">Подробнее</span>
+                    <h3 class="product-card-title">Непотопляемая<br>селфи-палка</h3>
+                    <span class="product-card-price">2 500 ₽</span>
+                  </a>
+                </li>
+                <li class="product-card">
+                  <a class="product-card-link general-focus" href="#">
+                    <img class="product-card-image" src="images/product-catalog/followme-selfie-stick.png" alt="Селфи-палка «Следуй за мной»." width="360" height="380">
+                    <span class="product-card-details link-spacing-font">Подробнее</span>
+                    <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
+                    <span class="product-card-price">1 500 ₽</span>
+                  </a>
+                </li>
+              </ul>
+              <button class="pagination-show-more link-spacing-font general-focus" type="button">Загрузить ещё</button>
+              <div class="pagination">
+                <!-- В случай активной первой или последней страницы добавляется к соответствующей ссылке НАЗАД или ВППЕРЕД класс pagination-active -->
+                <a class="pagination-prev pagination-active link-spacing-font general-focus" href="#">Назад</a>
+                <ul class="pagination-list general-list">
+                  <!-- К текущей ссылке добавляется класс pagination-current -->
+                  <li class="pagination-item">
+                    <a class="pagination-link general-focus pagination-current" href="#">1</a>
+                  </li>
+                  <li class="pagination-item">
+                    <a class="pagination-link general-focus" href="#">2</a>
+                  </li>
+                  <li class="pagination-item">
+                    <a class="pagination-link general-focus" href="#">3</a>
+                  </li>
+                  <li class="pagination-item">
+                    <span class="pagination-divider">...</span>
+                  </li>
+                  <li class="pagination-item">
+                    <a class="pagination-link general-focus" href="#">15</a>
+                  </li>
+                </ul>
+                <a class="pagination-next link-spacing-font general-focus" href="#">Вперёд</a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
