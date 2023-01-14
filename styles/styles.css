@@ -1584,13 +1584,14 @@ body {
 
 .range-wrapper-inputs {
   display: grid;
-  grid-template-columns: auto 1fr;
-  grid-gap: 15px;
+  grid-template-columns: 100px 123px;
+  grid-gap: 10px;
   margin-left: -13px;
 }
 
 .catalog-filter-label {
   display: flex;
+  align-items: center;
   font-family: inherit;
   font-size: 14px;
   line-height: 18px;
@@ -1603,9 +1604,10 @@ body {
 }
 
 .range-input {
-  padding: 0;
+  padding: 0 0 0 5px;
   margin: 0;
-  width: 70px;
+  min-width: 40px;
+  max-width: 70px;
   font-family: inherit;
   font-size: 14px;
   line-height: 20px;
@@ -2009,7 +2011,7 @@ body {
 
 .pagination-item {
   min-width: 40px;
-  max-width: 60px;
+  max-width: 100px;
   text-align: center;
 }
 
