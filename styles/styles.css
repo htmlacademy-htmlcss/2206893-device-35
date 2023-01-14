@@ -1548,7 +1548,7 @@ body {
 }
 
 .range-toggle:hover {
-  opacity: 0.5;
+  border: 2px solid rgba(0, 0, 0, 0.5);
 }
 
 .range-toggle:active {
@@ -2367,8 +2367,9 @@ body {
 .field-name {
   background-image: url("../images/logo/form-name-icon.svg");
   background-repeat: no-repeat;
-  background-position: 325px center;
-  background-size: 15px 12px;
+  background-position: 326px center;
+  background-size: 13px 12px;
+  padding-right: 50px;
 }
 
 .field-email {
@@ -2376,6 +2377,7 @@ body {
   background-repeat: no-repeat;
   background-position: 325px center;
   background-size: 15px 12px;
+  padding-right: 50px;
 }
 
 .email-error .field-email {
@@ -2457,6 +2459,7 @@ body {
   width: 180px;
   height: 60px;
   text-align: center;
+  padding: 20px 60px;
 }
 
 .quantity-minus,
